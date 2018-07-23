@@ -1,0 +1,69 @@
+<% content_for :title, "Гродненский Государственный Университет имени Янки Купалы | Календарь" %>
+
+
+<!--Header-->
+<%= render  "layouts/header" %>
+<!--Last Event-->
+<div class="last-event">
+    <h1>Последние Cобытия</h1>
+    <div class="last-event-block">
+        <%= image_tag("universitet.jpg")%>
+        <hr>
+        <h1><%= link_to "Конкурс в рамках стипендиальной программы Сopernicus в университеты Берлина или Гамбурга (Германия) объявлен для обучающихся", "#" %></h1>
+        <p id = "date">Воскресенье, сен. 30</p>
+    </div>
+    <%= link_to "Больше событий в Календарь ГрГУ »", "#", :id => "more-event" %>
+</div>
+<!--Navi-->
+<div class="block-navi-title">
+   <p><%= link_to  "Главная", root_path %> <i class="fa fa-angle-right" aria-hidden="true"></i> Календарь</p>
+   <h1>Календарь</h1>
+   <div class="event-calendar">
+        <h1>Календарь событий</h1>
+        <div class="event-content">
+            <hr>
+            <a href="#">События Университета<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Празники Университета<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div id = "sep"></div>
+    <div class="student-calendar">
+        <h1>Академический календарь</h1>
+        <div class="academic-content">
+            <hr>
+            <a href="#">Факультет Биологии и Экологии<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Военный Факультет<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Инженерно-Строительный Факультет<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Факультет Инновационных Технологий Машиностроения<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Факультет Искусств и Дизайна<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Факультет Истории Коммуникации и Туризма<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Факультет Математики и Информатики<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Педагогический Факультет<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Факультет Психологии<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Физико-Технический Факультет<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Факультет Физической Культуры<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Филологический Факультет<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Факультет Экономики и Управления<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Юридический Факультет<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+            <a href="#">Факультет Довузовской Подготовки<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <hr>
+        </div>
+    </div>
+</div>
+<!--Footer-->
+<%= render  "layouts/footer" %>
